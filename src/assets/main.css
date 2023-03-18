@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Reem+Kufi+Fun:wght@400;600&display=swap');
+
+:root{
+    --main: #965EC2;
+    --white: #FBF7FF;
+    --base: #1E1E2C;
+    --black: #2D2D44;
+    --gray: #86869C;
+    font-size: 1.72vh;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(Background.svg) no-repeat;
+    background-size: 100% 100%;
+
+    font-family: 'Nunito', sans-serif;
+    color: var(--white);
+
+    height: 100vh;
+}
+#app{
+    height: 100%;
+    padding-top: 4vh;
+    position: relative;
+}
+
+h1{
+    font-family: 'Reem Kufi Fun', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+h2{
+    font-weight: 400;
+    font-size: 2rem;
+}
+

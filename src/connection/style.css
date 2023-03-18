@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Reem+Kufi+Fun:wght@400;600&display=swap");
+:root {
+    --main: #965ec2;
+    --white: #fbf7ff;
+    --base: #1e1e2c;
+    --black: #2d2d44;
+    --gray: #86869c;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url(Background.svg) no-repeat;
+    background-size: 100% 100%;
+    font-family: "Nunito", sans-serif;
+    color: var(--white);
+    min-height: 100vh;
+    padding: 10vh 0;
+}
+span {
+    display: none;
+}
+.order {
+    width: 32vw;
+    background: var(--black);
+    border-radius: 2rem;
+    margin: auto;
+    padding: 1.7vw;
+    margin-bottom: 1vh;
+}
+.content {
+    display: grid;
+    grid-template-columns: 8.58vw 1fr;
+    grid-column-gap: 1.1vw;
+}
+.content img {
+    width: 100%;
+    border-radius: 1rem;
+}
+.text {
+    position: relative;
+}
+.text > * {
+    width: 100%;
+}
+h2 {
+    font-family: "Reem Kufi Fun";
+    font-size: 1.8vw;
+    text-align: end;
+}
+p.removed-ingredients {
+    font-size: 0.9vw;
+    font-weight: 600;
+}
+p {
+    font-size: 0.7vw;
+    font-weight: 400;
+    text-align: end;
+}
+.name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: start;
+    font-weight: 600;
+    font-size: 1.5vw;
+    font-family: "Reem Kufi Fun";
+}
+.complete {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.4rem 1.7vw;
+    width: 7.4vw;
+    font-family: "Nunito", sans-serif;
+    color: var(--white);
+    background: var(--main);
+    border: none;
+    border-radius: 0.5rem;
+    transition: 0.2s ease-out;
+}
+.complete:hover {
+    background: #e1bbfe;
+}
+.complete:focus {
+    animation: push 0.27s ease-out;
+}
+@keyframes push {
+    50% {
+        transform: scaleY(0.8);
+    }
+}
